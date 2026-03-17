@@ -1,0 +1,30 @@
+{
+  "name": "nest-practice",
+  "version": "0.0.0",
+  "author": "Nicolás Omar González Passerino",
+  "license": "MIT",
+  "private": true,
+  "description": "Repository created to record my practice learning NestJs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasOmar/nest-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NicolasOmar/nest-practice/issues"
+  },
+  "homepage": "https://github.com/NicolasOmar/nest-practice#readme",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "prettier": "^3.8.1",
+    "semantic-release": "^25.0.3"
+  }
+}
