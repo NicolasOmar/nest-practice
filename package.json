@@ -14,9 +14,15 @@
   },
   "homepage": "https://github.com/NicolasOmar/nest-practice#readme",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prettier": "prettier **/*.ts --write",
+    "lint-staged": "lint-staged -v",
+    "setup-all": "npm i && npm run setup-scratch && husky",
+    "setup-scratch": "cd 1-scratch && npm i"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/exec": "^7.1.0",
@@ -24,7 +30,12 @@
     "@semantic-release/github": "^12.0.6",
     "@semantic-release/npm": "^13.1.5",
     "@semantic-release/release-notes-generator": "^14.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "semantic-release": "^25.0.3"
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write"
   }
 }
