@@ -1,5 +1,5 @@
-# <img src="https://cdn.simpleicons.org/nestjs" title="NestJs Practice Repo" alt="NestJs Practice Repo" width="30"> NestJs Practice
-Repository created to record my practice learning NestJs with exercises based on the [Udemy Course](https://www.udemy.com/course/nestjs-the-complete-developers-guide/) of [Stephen Grider](https://www.udemy.com/user/sgslo/).
+# <img src="https://cdn.simpleicons.org/nestjs" title="NestJS Practice Repo" alt="NestJS Practice Repo" width="30"> NestJS Practice
+Repository created to record my practice learning NestJS with exercises based on the [Udemy Course](https://www.udemy.com/course/nestjs-the-complete-developers-guide/) of [Stephen Grider](https://www.udemy.com/user/sgslo/).
 
 ## Table of contents
 - [Status](#status)
@@ -10,7 +10,7 @@ Repository created to record my practice learning NestJs with exercises based on
 - [Other practice repos](#other-practice-repos)
 
 ## Status
-- Current repo's version is ![NestJs practice version](https://img.shields.io/github/package-json/v/nicolasomar/nest-practice?color=success&label=%20&style=flat-square)
+- Current repo's version is ![NestJS practice version](https://img.shields.io/github/package-json/v/nicolasomar/nest-practice?color=success&label=%20&style=flat-square)
 <!-- - **This course has been completed on 16/09/2025 - [Certificate](https://www.udemy.com/certificate/UC-375acfd7-464d-4024-8714-d3e76ea1b4df/)** -->
 
 ## Requirements
@@ -47,6 +47,6 @@ npm start
 TBA
 
 ## Other practice repos
-| Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | Python | NextJS |
+| Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48px">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48px">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48px">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48px">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/html5" title="HTML and CSS Practice Repo" alt="HTML and CSS Practice Repo" width="48px">](https://github.com/NicolasOmar/html-css-practice) | [<img src="https://cdn.simpleicons.org/sass" title="Styling Practice Repo" alt="Styling Practice Repo" width="48px">](https://github.com/NicolasOmar/styling-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48px">](https://github.com/NicolasOmar/typescript-practice) | [<img src="https://cdn.simpleicons.org/python" title="Python Practice Repo" alt="Python Practice Repo" width="48px">](https://github.com/NicolasOmar/python-practice) | [<img src="https://cdn.simpleicons.org/nextdotjs" title="NextJS Practice Repo" alt="NextJS Practice Repo" width="48px">](https://github.com/NicolasOmar/nest-practice) |
+| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48px">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48px">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48px">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48px">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/html5" title="HTML and CSS Practice Repo" alt="HTML and CSS Practice Repo" width="48px">](https://github.com/NicolasOmar/html-css-practice) | [<img src="https://cdn.simpleicons.org/sass" title="Styling Practice Repo" alt="Styling Practice Repo" width="48px">](https://github.com/NicolasOmar/styling-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48px">](https://github.com/NicolasOmar/typescript-practice) | [<img src="https://cdn.simpleicons.org/nextdotjs" title="NextJS Practice Repo" alt="NextJS Practice Repo" width="48px">](https://github.com/NicolasOmar/nest-practice) | [<img src="https://cdn.simpleicons.org/python" title="Python Practice Repo" alt="Python Practice Repo" width="48px">](https://github.com/NicolasOmar/python-practice) |
