@@ -1,15 +1,9 @@
 {
   "name": "1-scratch",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "npx ts-node-dev src/main.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@nestjs/common": "^7.6.17",
     "@nestjs/core": "^7.6.17",
