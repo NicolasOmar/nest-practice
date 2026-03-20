@@ -1,0 +1,7 @@
+Without matter the used language in the server, any one needs to have the following list of features
+
+- Pipe: To validate the data contained in the request
+- Guard: Make sure the user is authenticated
+- Controller: Route a request to a particular function
+- Service: Run a specific business logic
+- Repository: Access the database
