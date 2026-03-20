@@ -6,8 +6,9 @@
  * - `messages/messages` because the controller is inside the messages folder (that is the module)
  * - `--flat` because we don't want to create a new folder for the controller, we want it to be inside the messages folder
  */
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 
+// This is a class decorator because is declared above the class and affects the whole class
 @Controller('messages')
 export class MessagesController {
   @Get()
@@ -15,13 +16,17 @@ export class MessagesController {
     return 'This action returns all messages';
   }
 
+  // This is a method decorator because is declared above the method and affects the whole method
   @Post()
-  createMessage() {
-    return { content: 'This action adds a new message' };
+  createMessage(
+    // This kind of decorator is used to handle different parts of the request, in this case, the body of the request
+    @Body() body: { content: string },
+  ) {
+    return { content: body.content };
   }
 
   @Get(':id')
-  getMessage() {
-    return 'This action returns a message';
+  getMessage(@Param('id') id: string) {
+    return id;
   }
 }

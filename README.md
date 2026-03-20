@@ -51,6 +51,7 @@ npm start
 - Project with CLI (`2-project-with-cli` folder)
   - How to create a new NestJS project using its [CLI](https://docs.nestjs.com/).
   - Understanding of creation commands such as `generate module` and `generate controller`.
+  - How to use other decorators such as `Body` and `Param`.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
