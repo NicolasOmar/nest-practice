@@ -35,6 +35,7 @@ npm run setup-all
 | ------ | ------ |
 | All | `npm run setup-all` |
 | From Scratch | `npm run setup-scratch` |
+| Project with CLI | `npm run setup-with-cli` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder:
@@ -47,6 +48,9 @@ npm start
   - Installing minimal libraries to create a NestJS server.
   - Basic understanding of concepts such as `Controller` and `Module`.
   - Understanding of naming conventions for files.
+- Project with CLI (`2-project-with-cli` folder)
+  - How to create a new NestJS project using its [CLI](https://docs.nestjs.com/).
+  - Understanding of creation commands such as `generate module` and `generate controller`.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
