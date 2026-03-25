@@ -1,6 +1,6 @@
 {
   "name": "nest-practice",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Nicolás Omar González Passerino",
   "license": "MIT",
   "private": true,
@@ -17,8 +17,9 @@
     "semantic-release": "semantic-release",
     "prettier": "prettier **/*.ts --write",
     "lint-staged": "lint-staged -v",
-    "setup-all": "npm i && npm run setup-scratch && husky",
-    "setup-scratch": "cd 1-scratch && npm i"
+    "setup-all": "npm i && npm run setup-scratch && npm run setup-with-cli && husky",
+    "setup-scratch": "cd 1-scratch && npm i",
+    "setup-with-cli": "cd 2-project-with-cli && npm i"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
