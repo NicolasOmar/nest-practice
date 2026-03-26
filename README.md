@@ -36,6 +36,7 @@ npm run setup-all
 | All | `npm run setup-all` |
 | From Scratch | `npm run setup-scratch` |
 | Project with CLI | `npm run setup-with-cli` |
+| Persistance and Authentication | `npm run setup-persistance-and-auth` |
 
 ## How to run it
 To run any specific exercise, execute the following command in the project´s folder:
@@ -54,6 +55,8 @@ npm start
   - How to use other decorators such as `Body` and `Param`.
   - How to use a `DTO` (Data Transfer Object).
   - How to implement Inversion of control principle using `Injectable` decorator.
+- Persistance and Authentication (`3-persistance-and-auth` folder)
+  - 
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
