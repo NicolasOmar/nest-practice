@@ -56,7 +56,7 @@ npm start
   - How to use a `DTO` (Data Transfer Object).
   - How to implement Inversion of control principle using `Injectable` decorator.
 - Persistance and Authentication (`3-persistance-and-auth` folder)
-  - 
+  - How to integrate a SQL database using [TypeORM](https://www.npmjs.com/package/typeorm) and [SQLite](https://www.npmjs.com/package/sqlite3).
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
