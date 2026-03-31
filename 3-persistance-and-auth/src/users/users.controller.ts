@@ -7,11 +7,10 @@ import {
   Patch,
   Post,
   Query,
-  UseInterceptors,
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UsersService } from './users.service';
-import { SerializeInterceptor } from 'src/interceptors/serialize.interceptor';
+import { SerializeUser } from 'src/interceptors/serialize.interceptor';
 import { UserDto } from './dtos/user.dto';
 
 @Controller('auth')
@@ -29,14 +28,7 @@ export class UsersController {
     this.usersService.create(body.email, body.password);
   }
 
-  /**
-   * An interceptor can be called at function leve, controller level or at global scale
-   * It dependens the scope of the interceptor, but in this case, it will be called only
-   * for this specific route handler
-   *  The new SerializeInterceptor(UserDto) has been implemented to extend the interceptor
-   * functionality to more than one specific DTO
-   */
-  @UseInterceptors(new SerializeInterceptor(UserDto))
+  @SerializeUser(UserDto)
   @Get(':id')
   // Param works as 'localhost:3000/1234567' in the URL
   findOne(@Param('id') id: string) {
