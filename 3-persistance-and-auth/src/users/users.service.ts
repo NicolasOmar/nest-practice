@@ -1,7 +1,7 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
 import { Repository } from 'typeorm';
-import { User } from './user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { User } from './user.entity';
 
 @Injectable()
 export class UsersService {
@@ -25,6 +25,15 @@ export class UsersService {
   }
 
   async findOne(id: number) {
+    /**
+     * This line is for a case you are looking for a user with an empty session cookie
+     * which value is null, therefore, if the id is null due the empty cookie, the
+     * service will return null (an empty response) or an error (depending on what
+     * you want to indicate to the user)
+     */
+    if (!id) {
+      return null;
+    }
     /**
      * The idea of this logic if first to find the user
      * Then, if is not found, trow a NestJS exception
