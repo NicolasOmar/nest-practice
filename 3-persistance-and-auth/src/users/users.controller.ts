@@ -8,6 +8,7 @@ import {
   Post,
   Query,
   Session,
+  UseGuards,
 } from '@nestjs/common';
 import { SerializeUser } from 'src/interceptors/serialize.interceptor';
 import { CurrentUser } from './decorators/current-user.decorator';
@@ -15,6 +16,7 @@ import { UsersService } from './users.service';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UserDto } from './dtos/user.dto';
+import { AuthGuard } from './guards/auth.guard';
 
 @SerializeUser(UserDto)
 @Controller('auth')
@@ -60,6 +62,13 @@ export class UsersController {
 
   @Get('whoami')
   /**
+   * A guard is a piece of code that blocks or passes any request if the request fullfils
+   * certain logic asked by the guard
+   * In case you cannot fulfill the guard's logic, it will return a 403 response (forbidden
+   * resource)
+   */
+  @UseGuards(AuthGuard)
+  /**
    * The logic for this particular decorator is a bit complex, therefore I will disarm it
    * in this comment.
    * - First, you have the CurrentUser decorator, which grabs the request's context and
@@ -80,8 +89,8 @@ export class UsersController {
     return user;
   }
 
-  @Post('logout')
-  async logout(@Session() session: any) {
+  @Post('signout')
+  async signout(@Session() session: any) {
     session.userId = null;
   }
 

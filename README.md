@@ -63,6 +63,7 @@ npm start
   - How to create and implement a custom `decorator`.
   - Use node functions like `randomBytes`, `scrypt` and, `promisify` for password hashing.
   - How to handle session data through a `session cookie` in different ways (including `ParamDecorators` and `Interceptors`).
+  - How to handle access for any handler through a `Guard`.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
