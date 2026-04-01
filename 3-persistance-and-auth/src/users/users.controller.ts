@@ -8,10 +8,8 @@ import {
   Post,
   Query,
   Session,
-  UseInterceptors,
 } from '@nestjs/common';
 import { SerializeUser } from 'src/interceptors/serialize.interceptor';
-import { CurrentUserInterceptor } from './interceptors/current-user.interceptor';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { UsersService } from './users.service';
 import { AuthService } from './auth.service';
@@ -20,8 +18,6 @@ import { UserDto } from './dtos/user.dto';
 
 @SerializeUser(UserDto)
 @Controller('auth')
-// To call a custom interceptor, we must call the UserInterceptors as connector in the controller
-@UseInterceptors(CurrentUserInterceptor)
 export class UsersController {
   constructor(
     private usersService: UsersService,
