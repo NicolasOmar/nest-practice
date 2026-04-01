@@ -61,6 +61,7 @@ npm start
   - Understand the usage of `remove` and `save` methods to help logging in the database layer.
   - How to implement an `interceptor` to handle data at several levels.
   - How to create and implement a custom `decorator`.
+  - Use node functions like `randomBytes`, `scrypt` and, `promisify` for password hashing.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
