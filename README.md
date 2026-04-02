@@ -66,6 +66,7 @@ npm start
   - How to handle access for any handler through a `Guard`.
   - How to create and maintain unit tests with `Jest`.
   - Basic understanding about `end to end testing`.
+  - How to add `table relations` in TypeORM.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
