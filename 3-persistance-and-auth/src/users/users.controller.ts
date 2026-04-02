@@ -10,20 +10,20 @@ import {
   Session,
   UseGuards,
 } from '@nestjs/common';
-
-interface UserSession {
-  /** Authenticated user id stored in the cookie session */
-  userId?: number;
-}
-import { SerializeUser } from 'src/interceptors/serialize.interceptor';
+import { Serialize } from 'src/interceptors/serialize.interceptor';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { UsersService } from './users.service';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UserDto } from './dtos/user.dto';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 
-@SerializeUser(UserDto)
+interface UserSession {
+  /** Authenticated user id stored in the cookie session */
+  userId?: number;
+}
+
+@Serialize(UserDto)
 @Controller('auth')
 export class UsersController {
   constructor(

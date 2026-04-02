@@ -13,7 +13,7 @@ interface ClassConstructor {
 }
 
 // This is a custom decorator that we implemented to reduce the function calling length
-export function SerializeUser(dto: ClassConstructor) {
+export function Serialize(dto: ClassConstructor) {
   /**
    * An interceptor can be called at function leve, controller level or at global scale
    * It dependens the scope of the interceptor, but in this case, it will be called only
