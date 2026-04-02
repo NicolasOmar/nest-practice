@@ -23,7 +23,8 @@ import { Report } from './reports/report.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
-      database: 'db.sqlite',
+      database: process.env.NODE_ENV === 'test' ? 'test.sqlite' : 'db.sqlite',
+      dropSchema: process.env.NODE_ENV === 'test',
       // A last step to use entites and repositories for this comibination is to
       // include the used entities (on the whole app) in the array for the typeorm configuration
       entities: [User, Report],

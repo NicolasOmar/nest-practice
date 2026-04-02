@@ -9,7 +9,7 @@ import {
 
 // This interface has been created to define a basic Class blueprint and satisfy the Typescript compiler
 interface ClassConstructor {
-  new (...args: any[]): {};
+  new (...args: any[]): object;
 }
 
 // This is a custom decorator that we implemented to reduce the function calling length

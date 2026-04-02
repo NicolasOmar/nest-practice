@@ -67,7 +67,7 @@ export class UsersService {
      * keep the database-related events on the entity/database layer for better
      * separation of concerns
      */
-    this.repo.update(findedUser.id, attrs);
+    await this.repo.update(findedUser.id, attrs);
     return this.repo.save(findedUser);
   }
 

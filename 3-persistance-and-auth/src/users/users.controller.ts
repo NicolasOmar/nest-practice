@@ -10,6 +10,11 @@ import {
   Session,
   UseGuards,
 } from '@nestjs/common';
+
+interface UserSession {
+  /** Authenticated user id stored in the cookie session */
+  userId?: number;
+}
 import { SerializeUser } from 'src/interceptors/serialize.interceptor';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { UsersService } from './users.service';
@@ -34,7 +39,7 @@ export class UsersController {
      */
     @Body() body: CreateUserDto,
     // Another of the special tags is @Session, that will help us handle data from client side
-    @Session() session: any,
+    @Session() session: UserSession,
   ) {
     const createdUser = await this.authService.signup(
       body.email,
@@ -48,7 +53,7 @@ export class UsersController {
   }
 
   @Post('signin')
-  async signin(@Body() body: CreateUserDto, @Session() session: any) {
+  async signin(@Body() body: CreateUserDto, @Session() session: UserSession) {
     const signedUser = await this.authService.signin(body.email, body.password);
     /**
      * If you signin the same user you created before, it will not return any cookie because
@@ -90,8 +95,8 @@ export class UsersController {
   }
 
   @Post('signout')
-  async signout(@Session() session: any) {
-    session.userId = null;
+  signout(@Session() session: UserSession) {
+    session.userId = undefined;
   }
 
   @Get(':id')

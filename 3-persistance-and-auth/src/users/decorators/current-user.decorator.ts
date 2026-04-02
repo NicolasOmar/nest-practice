@@ -1,4 +1,10 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
+import { User } from '../user.entity';
+
+interface RequestWithCurrentUser {
+  /** The authenticated user attached by CurrentUserInterceptor */
+  currentUser?: User;
+}
 
 export const CurrentUser = createParamDecorator(
   /**
@@ -8,7 +14,7 @@ export const CurrentUser = createParamDecorator(
    * Also, we put that not usable argument as _ to avoid linting errors
    */
   (_: never, context: ExecutionContext) => {
-    const request = context.switchToHttp().getRequest();
+    const request = context.switchToHttp().getRequest<RequestWithCurrentUser>();
     return request.currentUser;
   },
 );
