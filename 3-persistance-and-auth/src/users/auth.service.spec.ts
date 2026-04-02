@@ -58,7 +58,7 @@ describe('AuthService', () => {
     service = module.get(AuthService);
   });
 
-  it('can create an instance of AuthService', async () => {
+  it('can create an instance of AuthService', () => {
     expect(service).toBeDefined();
   });
 

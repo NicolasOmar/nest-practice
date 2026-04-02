@@ -65,6 +65,7 @@ npm start
   - How to handle session data through a `session cookie` in different ways (including `ParamDecorators` and `Interceptors`).
   - How to handle access for any handler through a `Guard`.
   - How to create and maintain unit tests with `Jest`.
+  - Basic understanding about `end to end testing`.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
