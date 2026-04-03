@@ -44,8 +44,13 @@ export class ReportsController {
     return this.reportsService.changeApprovalState(id, approveBody.approve);
   }
 
-  @Get('reports')
+  @Get('estimate')
+  /**
+   *  The [Query] decorator mentions the query structure from a search request
+   * (such as localhost:3000/reports/estimate?make=Toyota&model=Fuego)
+   *  Each property is obtained from that query string, building a dto object
+   */
   getEstimate(@Query() query: GetEstimateDto) {
-    console.warn(query);
+    return this.reportsService.createEstimate(query);
   }
 }

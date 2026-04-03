@@ -67,6 +67,8 @@ npm start
   - How to create and maintain unit tests with `Jest`.
   - Basic understanding about `end to end testing`.
   - How to add `table relations` in TypeORM.
+  - How to handle and implement authentication through a `middleware` layer.
+  - How to build complex queries using `createQueryBuilder`.
 
 ## Other practice repos
 | Node | React | Angular | GraphQL | HTML & CSS | Styling | Typescript | NextJS | Python
