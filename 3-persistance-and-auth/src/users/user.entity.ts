@@ -16,6 +16,9 @@ export class User {
   @Column()
   password: string;
 
+  @Column({ default: false })
+  isAdmin: boolean;
+
   /**
    * The first argument of the relationship is refering the invocation of a entity class
    * encapsulated into a function to be called once the relationship is invoked

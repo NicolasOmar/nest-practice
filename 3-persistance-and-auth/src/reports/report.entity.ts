@@ -27,6 +27,9 @@ export class Report {
   @Column()
   mileage: number;
 
+  @Column({ default: false })
+  approved: boolean;
+
   /**
    * The first argument of the relationship is refering the invocation of a entity class
    * encapsulated into a function to be called once the relationship is invoked
