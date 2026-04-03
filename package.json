@@ -17,9 +17,10 @@
     "semantic-release": "semantic-release",
     "prettier": "prettier **/*.ts --write",
     "lint-staged": "lint-staged -v",
-    "setup-all": "npm i && npm run setup-scratch && npm run setup-with-cli && husky",
+    "setup-all": "npm i && npm run setup-scratch && npm run setup-with-cli && npm run setup-persistance-and-auth && husky",
     "setup-scratch": "cd 1-scratch && npm i",
-    "setup-with-cli": "cd 2-project-with-cli && npm i"
+    "setup-with-cli": "cd 2-project-with-cli/first-project && npm i && cd ../computer-project && npm i",
+    "setup-persistance-and-auth": "cd 3-persistance-and-auth && npm i"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",

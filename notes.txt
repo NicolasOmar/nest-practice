@@ -11,3 +11,7 @@ Inversion of control principle: Classes should not create instances of its depen
   - Instead injecting a specfic and defined class (a MySql instance), it uses a generic interface with the same properties and methods as any possible possibility
   - That technique will help the code to implement very different implementations as injections of that class, but they have to comply with parent class interface.
   - This also will help on testing scenarios, where can be used mocked implementations to avoid undesirable effects (slow running, random problems with external services among others)
+
+
+Authentication, Figure out WHO is making the request
+Authorization, Figure out if the person making the request is allowed to make it
